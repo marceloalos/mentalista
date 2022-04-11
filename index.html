@@ -4,26 +4,38 @@
   <title>
     Imersão Dev - Aula 03
   </title>
+
+  <link rel="stylesheet" href="CSS/components/main-container.css">
+  <link rel="stylesheet" href="CSS/components/sub-container.css">
+  <link rel="stylesheet" href="CSS/components/page-title.css">
+  <link rel="stylesheet" href="CSS/components/page-logo.css">
+  <link rel="stylesheet" href="CSS/components/page-subtitle.css">
+  <link rel="stylesheet" href="CSS/components/tried-number.css">
+  <link rel="stylesheet" href="CSS/components/try-hit.css">
+  <link rel="stylesheet" href="CSS/components/final-result.css">
+  <link rel="stylesheet" href="CSS/components/alura-logo.css">
 </head>
 
-<body>
-  <div class="container">
+<body class="main-container">
+  <div class="sub-container">
     <h1 class="page-title">
       Mentalista
     </h1>
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt="Logo da página"><br>
     <p class="page-subtitle">
       Digite um número de 0 a 10<br>
       Você tem 3 tentativas para acertar o número secreto
     </p>
-    <input type="number" id="valor" /><br>
-    <button type="submit" onclick="Chutar()">Chutar</button><br><br>
-    <h3 class="resultado" id="resultado"></h3>
+    <input type="number" class="tried-number" id="valor" /><br>
+    <button type="submit" class="try-hit" onclick="Chutar()">Chutar</button><br><br>
+    <h3 class="final-result" id="resultado"></h3>
   </div>
   <a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" class="alura-logo" alt="Logo da Alura">
   </a>
   <script src="app.js"></script>
 </body>
+
+<script type="text/javascript" src="JS/index.js"></script>
 
 </html>
